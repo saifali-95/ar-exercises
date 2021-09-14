@@ -9,4 +9,12 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+
+@employee = Employee.new
+@employee.save
+puts @employee.errors.full_messages
+
+@store10 = Store.new
+@store10.name = "Burnaby"
+@store10.save
+puts @store10.errors.full_messages
